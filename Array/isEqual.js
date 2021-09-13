@@ -58,7 +58,7 @@ const o2 = {
   },
 }
 
-console.log('isEqual示例一(对象)：', isEqual(o1, o2))
+console.log('isEqual示例一(对象)：', isEqual(o1, o2)) // true
 
 /**
  * 使用示例二：数组
@@ -66,4 +66,4 @@ console.log('isEqual示例一(对象)：', isEqual(o1, o2))
 const a1 = [1, 2, 3, { name: 'Mike', age: 16 }]
 const a2 = [1, 2, 3, { name: 'Mike', age: 16 }]
 
-console.log('isEqual示例二(数组)：', isEqual(a1, a2))
+console.log('isEqual示例二(数组)：', isEqual(a1, a2)) // true
