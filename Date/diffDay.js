@@ -1,5 +1,8 @@
 /**
  * @description 计算两个日期之间相差天数（若不足一天，则向下取整）
+ * @param {String} startDate 起始日期
+ * @param {String} endDate 截止日期
+ * @return {Number} 相差天数
  * @tip 支持的日期格式：xxxx/xx/xx  xxxx-xx-xx  xxxx.xx.xx
  */
 function diffDay(startDate, endDate){
@@ -24,6 +27,8 @@ function diffDay(startDate, endDate){
 
 /**
  * @description 日期格式是否合格
+ * @param {String} date 需校验的日期
+ * @return {Boolean} 是否合格
  * @tip 支持的日期格式：xxxx/xx/xx  xxxx-xx-xx  xxxx.xx.xx
  */
 function isDate(date){
@@ -43,6 +48,9 @@ function isDate(date){
 	return true
 }
 
+/**
+ * 使用示例
+ */
 let dd1 = '2021-09-14'
-let dd2 = '2021-09-19'
-console.log(diffDay(dd1, dd2))
+let dd2 = '2021-09-17'
+console.log(diffDay(dd1, dd2)) // 3
