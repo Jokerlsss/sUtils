@@ -1,6 +1,8 @@
 /**
+ * @description 日期格式转换
  * @param {Date} date 需要格式化的日期
  * @param {String} format 要转换的格式
+ * @return {String} 输出格式如：xxxx-xx-xx
  */
 function dateFormat(date, format) {
 	// 传入参数不是日期类型时，直接抛出错误

@@ -7,6 +7,10 @@ import { dateFormat } from './dateFormat.js'
  * @tip 
  */
 function dateAddDay(date, number){
+	if(!(date instanceof Date)){
+		throw Error('Invalid params, please enter an Date type')
+		return
+	}
 	// 一天的时间戳
 	const dayTimeStamp = 86400000
 	// 当前日期的时间戳
